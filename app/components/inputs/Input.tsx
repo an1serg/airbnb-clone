@@ -37,6 +37,7 @@ const Input: React.FC<InputProps> = ({
         />
       )}
       <input
+        key={id}
         id={id}
         disabled={disabled}
         {...register(id, { required })}

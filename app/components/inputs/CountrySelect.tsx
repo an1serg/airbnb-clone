@@ -18,6 +18,9 @@ interface CountrySelectProps {
 }
 
 const flagemojiToPNG = (flag: string) => {
+  if (!flag) {
+    return;
+  }
   var countryCode = Array.from(flag, (codeUnit: any) =>
     codeUnit.codePointAt()
   )
